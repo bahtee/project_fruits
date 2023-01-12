@@ -8,4 +8,7 @@ def get_cheapest_fruit_id(data:str)->id:
         name of the cheapest fruit
     """
     # your code here
-    pass
+    return data
+
+data = open("fruits.csv","r", encoding='utf8' ).read()
+print(get_cheapest_fruit_id(data))
